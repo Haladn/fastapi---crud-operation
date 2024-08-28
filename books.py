@@ -5,7 +5,7 @@ import models
 from database import engin,SessionLocal
 from sqlalchemy.orm import Session
 
-# this is to create the database and tables is it does not exist
+# this is to create the database and tables, if they do not exist
 models.Base.metadata.create_all(bind=engin)
 app = FastAPI()
 
